@@ -1,11 +1,10 @@
 package pesistence;
 
-import domain.HoaDon;
-
 import java.util.List;
 
-public interface HoaDonDAO {
+import domain.HoaDon;
 
+public interface HoaDonGateway {
     void themHoaDon(HoaDon hoaDon);
     
     void suaHoaDon(HoaDon hoaDon);

@@ -26,7 +26,7 @@ public abstract class HoaDon {
     public LocalDate getNgayRaHoaDon() {
         return ngayRaHoaDon;
     }
-
+    
     public double getSoLuong() {
         return soLuong;
     }
@@ -36,4 +36,5 @@ public abstract class HoaDon {
     }
 
     public abstract double tinhThanhTien();
+    
 }

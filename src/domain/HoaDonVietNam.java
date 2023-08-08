@@ -2,17 +2,20 @@ package domain;
 
 import java.time.LocalDate;
 
+
 public class HoaDonVietNam extends HoaDon {
-    private LoaiKhachHang loaiKhachHang;
+    private String loaiKhachHang;
     private double dinhMuc;
+    private double thanhTien;
+
     
-    public HoaDonVietNam(int maKH, String hoTenKH, LocalDate ngayRaHoaDon, double soLuong, double donGia, LoaiKhachHang loaiKhachHang, double dinhMuc) {
+    public HoaDonVietNam(int maKH, String hoTenKH, LocalDate ngayRaHoaDon, double soLuong, double donGia, String loaiKhachHang, double dinhMuc) {
         super(maKH, hoTenKH, ngayRaHoaDon, soLuong, donGia);
         this.loaiKhachHang = loaiKhachHang;
         this.dinhMuc = dinhMuc;
     }
 
-    public LoaiKhachHang getLoaiKhachHang() {
+    public String getLoaiKhachHang() {
         return loaiKhachHang;
     }
     public double getDinhMuc() {
@@ -27,4 +30,9 @@ public class HoaDonVietNam extends HoaDon {
         }
         return thanhTien;
     }
+
+    public void setThanhTien(double thanhTien) {
+        this.thanhTien = thanhTien;
+    }
+
 }
